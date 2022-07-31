@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live TT</title>
-  <link rel="stylesheet" href="css/live.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/pokedex.js"></script>
+    <title>Live TT</title>
 </head>
 <body>
-  
-  <header>
-    <img src="img/logo.png" alt="Logo">
-  </header>
-
-  <section class="container">
-    <!-- Elaboramos algum conteudo para colocar no meio -->
-    <!-- e acionar algo com um btn usando Javascript se possível -->
-
-  </section>
-
-
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="">
+        </header>
+        <main>
+            <div class="container-busca">
+                <input id="idPokemon" type="text" name="idPokemon">
+                <button onclick="botaoBuscar()" class="btnBuscarPokemon">Buscar</button>
+            </div>
+            <div id="pokedex">
+                <div id="blueSignal"></div>
+                <div id="screen"></div>
+                <div id="infos">
+                    <div id="name"></div>
+                    <div id="types"></div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
